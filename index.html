@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Idea Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="sparkle"></div>
+                <h1>Hackathon Idea Generator</h1>
+            </div>
+
+            <div class="input-container">
+                <textarea 
+                    id="promptInput" 
+                    placeholder="I want to help students learn better..."
+                    rows="4"
+                ></textarea>
+                <button id="submitBtn" disabled>
+                    <span class="submit-icon">➤</span>
+                    <span class="loader"></span>
+                </button>
+            </div>
+
+            <div id="responseContainer" class="response-container hidden">
+                <div class="idea-section">
+                    <h2 id="ideaTitle"></h2>
+                    <p id="ideaDescription"></p>
+                </div>
+                <div class="tech-stack-section">
+                    <h3>Tech Stack:</h3>
+                    <div id="techStack" class="tech-stack-tags"></div>
+                </div>
+                <div class="difficulty-section">
+                    <span class="difficulty-label">Difficulty:</span>
+                    <span id="difficultyLevel"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+</html>
